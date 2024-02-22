@@ -6,6 +6,10 @@ const useStyles = makeStyles((theme) => ({
     main: {
         display: "flex",
         alignItems: "center",
+        "&>span>a": {
+            color: "blue",
+            textDecoration: "none"
+        }
     },
     img: {
         height: "80px",
@@ -26,7 +30,7 @@ function Footer() {
         <div className={classes.main}>
             <img src={priyanshu} alt="priyanshu" className={classes.img} />
             <p style={{ paddingRight: "10px" }}>Footer</p>
-            <span style={{ paddingLeft: "10px", boxShadow: "-1px 0px 0px 0px" }}>Copyright © 2023 Priyanshu.us</span>
+            <span style={{ paddingLeft: "10px", boxShadow: "-1px 0px 0px 0px" }}>Copyright © 2023 : <a href="http://priyanshu.us/">priyanshu.us</a></span>
         </div>
     )
 }

@@ -17,13 +17,16 @@ const useStyles = makeStyles((theme) => ({
         gap: 60,
         padding: "30px",
         width: "1450px",
+        backgroundColor: "#ffffff",
         "@media screen and (max-width:1014px)": {
             display: "grid",
             width: "fit-content"
         },
         "& > div": {
+            backgroundColor: "#014545fc",
+            color: "white",
             padding: "20px 40px",
-            backgroundColor: "#efefef",
+            // backgroundColor: "#efefef",
             borderRadius: "5px",
             fontVariant: "all-petite-caps",
             "@media screen and (max-width:767px)": {

@@ -7,19 +7,23 @@ const useStyles = makeStyles((theme) => ({
     container: {
         fontVariant: "all-petite-caps",
         display: "flex",
-        gridGap: "0px 110px",
-        maxWidth: "1470px"
+        margin: "5px 50px",
+        gridGap: "0px 70px",
+        maxWidth: "1470px",
+        minWidth: "600px",
+        backgroundColor: "#005c5c",
+        color: "white",
     },
     container_1: {
-        minWidth: "540px",
-        padding: "0px 60px",
+        minWidth: "500px",
+        padding: "15px 60px",
         fontSize: "larger",
         "& > a": {
             padding: "4px"
         },
         "& > p": {
             maxWidth: "830px",
-            color: "#6B7280"
+            color: "white"
         },
         "@media screen and (max-width:1014px)": {
             textAlign: "center"
@@ -36,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         width: "700px",
     },
     redText: {
-        color: "#7E22CE",
+        color: "rgb(61 207 111)",
     },
 }));
 
@@ -64,7 +68,7 @@ function Body() {
     return (
         <div className={classes.container}>
             <div className={classes.container_1}>
-                <h1>Welcome to {showHomepage && <span style={{ color: "#7E22CE" }}>HomePage</span>}</h1>
+                <h1>Welcome to {showHomepage && <span style={{ color: "rgb(61 207 111)" }}>HomePage</span>}</h1>
                 <h2>Learn <span className={classes.redText}>{headings[currentHeadingIndex]}</span></h2>
                 <p>
                     Confused on which course to take?
@@ -75,11 +79,11 @@ function Body() {
                     coding techniques to people in a short
                     time which took me ages to learn.
                 </p>
-                <a href="/">
+                <a href="/courses">
                     <Button variant="contained" style={{ borderRadius: "5px", backgroundColor: "black" }}>Free Courses</Button>
                 </a>
                 <a></a>
-                <a href="/">
+                <a href="/blogs">
                     <Button variant="contained" style={{ borderRadius: "5px", backgroundColor: "#503939" }}>Explore Blog</Button>
                 </a>
             </div>
